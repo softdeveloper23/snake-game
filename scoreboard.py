@@ -8,7 +8,7 @@ class ScoreBoard(Turtle):
     def __init__(self) -> None:
         super().__init__()
         self.score = 0
-        self.high_score = int(self.get_current_high_score())
+        self.high_score = self.get_current_high_score()
         self.color(OBJECT_COLOR)
         self.penup()
         self.goto(0, 270)
